@@ -1,0 +1,20 @@
+python -u run.py --metric affiliation --t 0.100 \
+  --use_gpu True \
+  --gpu 0 \
+  --root_path ./dataset/evaluation_dataset \
+  --data NIPS_TS_GECCO \
+  --model ./DADA \
+  --seq_len 100 \
+  --d_model 256 \
+  --hidden_dim 64 \
+  --depth 10 \
+  --bn_dims 16 32 64 128 192 256 \
+  --k 3 \
+  --patch_len 5 \
+  --stride 5 \
+  --mask_mode c \
+  --revin 1 \
+  --channel_independence 1 \
+  --percentage 0 \
+  --des 'zero_shot' \
+  --batch_size 128 

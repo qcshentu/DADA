@@ -1,0 +1,10 @@
+export CUDA_VISIBLE_DEVICES=0
+sh ./scripts/MSL/affiliation.sh
+sh ./scripts/PSM/affiliation.sh
+sh ./scripts/SMAP/affiliation.sh
+sh ./scripts/SMD/affiliation.sh
+sh ./scripts/SWAT/affiliation.sh
+sh ./scripts/NIPS_CICIDS/affiliation.sh
+sh ./scripts/NIPS_Creditcard/affiliation.sh
+sh ./scripts/NIPS_GECCO/affiliation.sh
+sh ./scripts/NIPS_SWAN/affiliation.sh
