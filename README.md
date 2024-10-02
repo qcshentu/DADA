@@ -39,8 +39,7 @@
 DADA requires transformers==4.33.3
 ## Evaluation
 - Prepare the benchmark datasets.  
-Datasets can be downloaded at this link: https://anonymous.4open.science/r/DATA-6605  
-Downloading datasets requires Git LFS.  
+Datasets can be downloaded at this link: https://drive.google.com/file/d/1QumS8bSRsLZT7u5TWLaWctDWvGnSyeRB/view?usp=drive_link  
 - Running the following command to evaluate.
 
 ```bash
@@ -50,7 +49,7 @@ sh ./scripts/affiliation.sh
 # sh ./scripts/MSL/affiliation.sh
 ```
 ```bash
-# auc_roc metric for all dataset
+# auc_roc metric for all datasets
 sh ./scripts/auc.sh
 # [Example] Evaluate on MSL.
 # sh ./scripts/MSL/auc.sh
