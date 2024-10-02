@@ -49,7 +49,9 @@ def data_info(root_path, dataset):
     meta_path = root_path + "/meta.npy"
     meta_info = np.load(meta_path, allow_pickle=True).item()
     data_info = pd.DataFrame.from_dict(meta_info['data_info'])
-    channel_info = list(meta_info['channel_info'][dataset])
+    try:
+        channel_info = list(meta_info['channel_info'][dataset])
+    except: channel_info = None
     data_info = data_info.query(f'dataset_name.str.contains("{dataset}")', engine="python")
     file_names = data_info.file_name.values
     train_lens = data_info.train_lens.values
