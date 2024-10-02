@@ -38,11 +38,13 @@
 
 DADA requires transformers==4.33.3
 ## Evaluation
-- Prepare the benchmark datasets.
-- Running the follow command to evaluate.
+- Prepare the benchmark datasets.  
+Datasets can be downloaded at this link: https://anonymous.4open.science/r/DATA-6605  
+Downloading datasets requires Git LFS.  
+- Running the following command to evaluate.
 
 ```bash
-# affiliation metric for all dataset
+# affiliation metric for all datasets
 sh ./scripts/affiliation.sh
 # [Example] Evaluate on MSL.
 # sh ./scripts/MSL/affiliation.sh
