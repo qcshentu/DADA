@@ -30,6 +30,4 @@ with h5py.File(data_path, 'r') as input_hf:
     label = data[:, 1]
     print(series.shape) # [num_samples, 100, 1]
     print(label.shape) # [num_samples, 100, 1]
-```
-- Monash+ dataset(merged).  
-You can download the merged Monash+ dataset directly from this link: https://drive.google.com/file/d/1CkWGxRPSrD62AoeOxXSak4b3ZcAMDXjd/view?usp=sharing  
+``` 
